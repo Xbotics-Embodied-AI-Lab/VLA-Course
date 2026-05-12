@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "vla_class_lerobot"
+version = "0.0.1"
+requires-python = "==3.12.13"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+]
+# 项目依赖项
+dependencies = [
+    # pytorch相关依赖项
+    "torch==2.8.0",
+    "torchvision==0.23.0",
+    "torchaudio==2.8.0",
+    "lightning",
+    "torchmetrics",
+    "torchsummary",
+    
+    "wandb",
+
+    # 其他依赖项
+    "numpy",
+    "matplotlib",
+    "ipython","ipykernel","uv",
+    "nbconvert",
+    "nbclient",
+    "tqdm",
+    "scikit-learn",
+    "flow-matching==1.0.10",
+
+    # lerobot
+    "lerobot[all]",
+    "torchcodec==0.7.0",
+]
+
+
+[tool.uv.sources]
+lerobot = { path = "./lerobot", editable = true }
+torch = [
+  { index = "pytorch-cu128", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+]
+torchvision = [
+  { index = "pytorch-cu128", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+]
+torchaudio = [
+  { index = "pytorch-cu128", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+]
+
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+# 将项目标记为非包（non-package）
+[tool.uv]
+package = false
+
