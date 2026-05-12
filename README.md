@@ -1,6 +1,6 @@
 # VLA Course
 
-VLA Course 是 Xbotics Embodied AI Lab 的具身智能与 Vision-Language-Action 课程代码资料仓库。仓库按课程大纲组织代码、Notebook、机器人模型资料和辅助下载脚本，便于学员按章节获取实验材料。
+VLA Course 是 Xbotics Embodied AI Lab 的具身智能与 Vision-Language-Action 课程代码资料仓库。仓库按课程大纲组织代码、Notebook 和机器人模型资料，便于学员按章节获取实验材料。
 
 ## 目录结构
 
@@ -19,8 +19,6 @@ VLA Course 是 Xbotics Embodied AI Lab 的具身智能与 Vision-Language-Action
 │   ├── 第8章：Sim2Real及Real2Sim/
 │   ├── 第9章：科研臂VLA实践/
 │   └── 第10章：VLA技术总结与前沿展望/
-├── scripts/
-└── tests/
 ```
 
 当前已包含的主要资料：
@@ -44,41 +42,6 @@ cd VLA-Course
 ```
 
 按章节进入对应目录，解压 `code.zip` 或 `URDF.zip` 后运行课程代码。各章节代码可能有独立依赖，请优先查看对应目录中的 `pyproject.toml`、Notebook 或压缩包内说明。
-
-## 辅助脚本
-
-`scripts/feishu_course_downloader.py` 用于从飞书课程文档中提取并下载非视频、非 PDF、非 PPT 的附件，按文档标题层级保存到本地目录。
-
-从已保存的 `client_vars` JSON 生成清单：
-
-```bash
-python -m scripts.feishu_course_downloader path/to/client-vars.json --manifest manifest.json
-```
-
-从飞书接口拉取页面并下载附件时，需要提供来源配置和浏览器登录态：
-
-```bash
-export FEISHU_TENANT_ORIGIN="https://example.feishu.cn"
-export FEISHU_DOC_ID="..."
-export FEISHU_WIKI_SPACE_ID="..."
-export FEISHU_WIKI_TOKEN="..."
-
-python -m scripts.feishu_course_downloader \
-  --state .playwright-cli/feishu-state.json \
-  --manifest manifest.json \
-  --output . \
-  --download
-```
-
-也可以用 `--tenant-origin`、`--doc-id`、`--wiki-space-id`、`--wiki-token` 代替环境变量。
-
-## 测试
-
-仓库内脚本使用 Python 标准库 `unittest` 测试：
-
-```bash
-python -m unittest
-```
 
 ## 维护约定
 
