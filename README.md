@@ -1,6 +1,6 @@
 # VLA Course
 
-VLA Course 是 Xbotics Embodied AI Lab 的具身智能与 Vision-Language-Action 课程代码资料仓库。仓库按课程大纲组织代码、Notebook 和机器人模型资料，便于学员按章节获取实验材料。
+VLA Course 是 Xbotics Embodied AI Lab 的具身智能与前沿 VLA 实战营代码资料仓库。仓库按课程大纲组织代码、Notebook 和机器人模型资料，便于学员按章节获取实验材料。
 
 ## 目录结构
 
