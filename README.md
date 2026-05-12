@@ -23,12 +23,12 @@ VLA Course 是 Xbotics Embodied AI Lab 的具身智能与 Vision-Language-Action
 
 当前已包含的主要资料：
 
-- `第一部分：基础篇/第2章：具身智能基础工具与框架/2.1 PyTorch及PyTorchLightning框架/code.zip`
-- `第一部分：基础篇/第2章：具身智能基础工具与框架/2.2 Transformer核心原理/URDF.zip`
-- `第一部分：基础篇/第2章：具身智能基础工具与框架/2.3 GPT2的实现/code.zip`
-- `第二部分：环境和数采/第3章：机器人基础与实操/3.1 机器人核心数学基础/URDF.zip`
-- `第二部分：环境和数采/第3章：机器人基础与实操/3.3 LeRobot框架/pyproject.toml`
-- `第二部分：环境和数采/第3章：机器人基础与实操/3.4 LIBERO仿真环境/libero_demo.ipynb`
+- [第一部分：基础篇/第2章：具身智能基础工具与框架/2.1 PyTorch及PyTorchLightning框架/code.zip](<第一部分：基础篇/第2章：具身智能基础工具与框架/2.1 PyTorch及PyTorchLightning框架/code.zip>)
+- [第一部分：基础篇/第2章：具身智能基础工具与框架/2.2 Transformer核心原理/URDF.zip](<第一部分：基础篇/第2章：具身智能基础工具与框架/2.2 Transformer核心原理/URDF.zip>)
+- [第一部分：基础篇/第2章：具身智能基础工具与框架/2.3 GPT2的实现/code.zip](<第一部分：基础篇/第2章：具身智能基础工具与框架/2.3 GPT2的实现/code.zip>)
+- [第二部分：环境和数采/第3章：机器人基础与实操/3.1 机器人核心数学基础/URDF.zip](<第二部分：环境和数采/第3章：机器人基础与实操/3.1 机器人核心数学基础/URDF.zip>)
+- [第二部分：环境和数采/第3章：机器人基础与实操/3.3 LeRobot框架/pyproject.toml](<第二部分：环境和数采/第3章：机器人基础与实操/3.3 LeRobot框架/pyproject.toml>)
+- [第二部分：环境和数采/第3章：机器人基础与实操/3.4 LIBERO仿真环境/libero_demo.ipynb](<第二部分：环境和数采/第3章：机器人基础与实操/3.4 LIBERO仿真环境/libero_demo.ipynb>)
 
 部分章节目录目前作为课程大纲占位保留，后续可逐步补充实验代码、讲义配套材料或 README。
 
